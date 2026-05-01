@@ -178,7 +178,8 @@ body::before {
 
 .toc ol {
   list-style: none;
-  counter-reset: toc-counter;
+  /* 本文の章番号が 00 から始まるため、目次番号も 00 始まりに揃える */
+  counter-reset: toc-counter -1;
 }
 
 .toc > ol > li {
@@ -598,10 +599,10 @@ table tbody td strong {
     <li><a href="#intro">はじめに ― 「正しさ」が暴力に変わる瞬間</a><span class="toc-sub">プロローグ</span></li>
     <li><a href="#sec1">「指示厨」とは何か</a><span class="toc-sub">用語の輪郭を整理する</span></li>
     <li><a href="#sec2">心理学的メカニズム</a><span class="toc-sub">中核分析 ― 11の駆動力</span></li>
-    <li><a href="#sec3">配信文脈 vs 一般ネット文脈</a><span class="toc-sub">差異と共通項の比較</span></li>
+    <li><a href="#sec3">ゲーム配信文脈と一般ネット文脈の比較</a><span class="toc-sub">差異と共通項の比較</span></li>
     <li><a href="#sec4">文化的・社会的背景</a><span class="toc-sub">日本固有の文脈と海外との対比</span></li>
-    <li><a href="#sec5">当事者の自己認識</a><span class="toc-sub">善意系・攻撃系・顕示系の三類型</span></li>
-    <li><a href="#sec6">学術知見の総括</a><span class="toc-sub">主要研究のリスト</span></li>
+    <li><a href="#sec5">当事者(指示厨側)の自己認識と動機の言語化</a><span class="toc-sub">善意系・攻撃系・顕示系の三類型</span></li>
+    <li><a href="#sec6">学術・専門家の知見の総括</a><span class="toc-sub">主要研究のリスト</span></li>
     <li><a href="#sec7">哲学的省察</a><span class="toc-sub">「正しさ」と認識論の罠</span></li>
     <li><a href="#closing">おわりに ― 指示する代わりに、観察する</a><span class="toc-sub">エピローグ</span></li>
   </ol>
